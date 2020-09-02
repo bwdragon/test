@@ -82,7 +82,9 @@ var translateMap= [{"name":"Odessa", "tr": "Одесская"},
 			{"name":"Mykolayiv", "tr": "Николаевская"},
 			{"name":"Vinnytsya", "tr": "Винницкая"}];
 function changeNumbers() {
-	$.getJSON('https://spreadsheets.google.com/feeds/list/1JP_lGHOwvob1GIn2Ot5kj2_SziENBGh6Jew--gaQPs4/1/public/values?alt=json', function(data) {
+	$.getJSON('https://www.liga.net/files/general/data/coronavirus/1.json', function(data) 
+	/*$.getJSON('https://spreadsheets.google.com/feeds/list/1JP_lGHOwvob1GIn2Ot5kj2_SziENBGh6Jew--gaQPs4/1/public/values?alt=json', function(data)*/
+		  {
 		var scraped = data['feed']['entry']
 
 		function putNumber(value) {
