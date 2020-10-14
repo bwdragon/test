@@ -1,3 +1,8 @@
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.cmd.push(function () {
+googletag.pubads().disableInitialLoad();
+});
 googletag.cmd.push(function () {
 var mapping_branding_left = googletag.sizeMapping().addSize([1050, 0], [460, 1200]).//desktop
 addSize([1024, 0], []).//desktop
